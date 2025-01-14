@@ -1,0 +1,425 @@
+// My snippets.
+{
+	// Place your snippets for latex here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Simple Template": {
+		"prefix": [
+			"template-basic"
+		],
+		"body": [
+			"\\documentclass[12pt]{article}",
+			"\\usepackage{config}",
+			"",
+			"\\begin{document}",
+			"$1",
+			"\\end{document}"
+
+		]
+	},
+	
+	
+	"text":{
+		"prefix": [
+			"\"\""
+	    ],
+		"body": [
+			"\\text{ &1}"
+		]
+	},
+	"Center": {
+		"prefix": [
+			"цен", "cen"
+		],
+		"body": [
+			"\\begin{center}$1",
+			"\\end{center}$0",
+		]
+	},
+	
+
+	"Theorem": {
+		"prefix": [
+			"теор",
+			"th",
+		],
+		"body": [
+			"\\begin{theo}{$1}",
+			"$2",
+			"\\end{theo}"
+		]
+	},
+
+
+	"Nota": {
+		"prefix": [
+			"nota",
+		],
+		"body": [
+			"\\begin{nota}{$1}",
+			"$2",
+			"\\end{nota}"
+		]
+	},
+
+	"Definition": {
+		"prefix": [
+			"деф",
+			"def",
+		],
+		"body": [
+			"\\begin{defin}{$1}",
+			"$2",
+			"\\end{defin}"
+		]
+	},
+
+
+	"Lemma": {
+		"prefix": [
+			"lm"
+		],
+		"body": [
+			"\\begin{lem}{$1}",
+			"$2",
+			"\\end{lem}"
+		]
+	},
+
+
+	"Proposition": {
+		"prefix": [
+			"propos",
+		],
+		"body": [
+			"\\begin{propos}{$1}",
+			"$2",
+			"\\end{poropos}"
+		]
+	},
+
+
+	"Rem": {
+		"prefix": [
+			"рем",
+			"rem",
+		],
+		"body": [
+			"\\begin{rem}{$1}",
+			"$2",
+			"\\end{rem}"
+		]
+	},
+
+	"Exer": {
+		"prefix": [
+			"exer",
+		],
+		"body": [
+			"\\begin{exer}{$1}",
+			"$2",
+			"\\end{exer}"
+		]
+	},
+
+
+	"Proof": {
+		"prefix": [
+			"док",
+			"proof",
+		],
+		"body": [
+			"\\textit{Доказательство}"
+		]
+	},
+
+
+	"Overline": {
+		"prefix": [
+			"\\ol"
+		],
+		"body": [
+			"\\overline{$1} $0"
+		]
+	},
+
+
+	"Underline": {
+		"prefix": [
+			"\\ul"
+		],
+		"body": [
+			"\\underline{$1} $0 "
+		]
+	},
+
+
+	"Overset": {
+		"prefix": [
+			"\\os"
+		],
+		"body": [
+			"\\overset{ $1}{ $TM_SELECTED_TEXT} $0"
+		]
+	},
+
+
+	"Underset": {
+		"prefix": [
+			"\\us"
+		],
+		"body": [
+			"\\underset{ $1}{ $TM_SELECTED_TEXT} $0"
+		]
+	},
+
+	
+	"Underset with line": {
+		"prefix": [
+			"\\usl"
+		],
+		"body": [
+			"\\underset{ $1}{\\underline{ $TM_SELECTED_TEXT}} $0"
+		]
+	},
+
+
+	"Right arrow": {
+		"prefix": [
+			"\\rarrow"
+		],
+		"body": [
+			"\\longrightarrow "
+		],
+		"description": "-->"
+	},
+
+
+	"Left arrow": {
+		"prefix": [
+			"\\larrow"
+		],
+		"body": [
+			"\\longleftarrow "
+		],
+		"description": "<--"
+	},
+
+	
+	"Left right arrow": {
+		"prefix": [
+			"\\lrarrow"
+		],
+		"body": [
+			"\\longleftrightarrow "
+		],
+		"description": "<-->"
+	},
+
+
+	"Right implies": {
+		"prefix": [
+			"so"
+		],
+		"body": [
+			"\\Longrightarrow "
+		]
+	},
+
+
+	"Left implies": {
+		"prefix": [
+			"\\limpl"
+		],
+		"body": [
+			"\\Longleftarrow "
+		],
+		"description": "<=="
+	},
+
+	"Left right implies": {
+		"prefix": [
+			"\\lrimpl"
+		],
+		"body": [
+			"\\Longleftrightarrow "
+		],
+		"description": "<==>"
+	},
+
+
+	"Fraction": {
+		"prefix": [
+			"//"
+		],
+		"body": [
+			"\\frac{$1}{$2} $0"
+		],
+		"description": ""
+	},
+
+
+	"Let": {
+		"prefix": [
+			"\\let"
+		],
+		"body": [
+			"\\sqsupset \\; "
+		],
+		"description": ""
+	},
+
+
+	"Forall": {
+		"prefix": [
+			"\\fa"
+		],
+		"body": [
+			"\\forall \\; "
+		],
+		"description": ""
+	},
+
+
+	"Exists": {
+		"prefix": [
+			"\\ex"
+		],
+		"body": [
+			"\\exists \\; "
+		],
+		"description": ""
+	},
+
+
+	"Look": {
+		"prefix": [
+			"lo",
+			"\\lo"
+		],
+		"body": [
+			"\\measuredangle \\; "
+		],
+		"description": ""
+	},
+
+
+	"Subset": {
+		"prefix": [
+			"\\sub"
+		],
+		"body": [
+			"\\subset "
+		],
+		"description": ""
+	},
+
+
+	"Supset": {
+		"prefix": [
+			"\\sup"
+		],
+		"body": [
+			"\\supset "
+		],
+		"description": ""
+	},
+
+
+	"Sum": {
+		"prefix": [
+			"\\sum"
+		],
+		"body": [
+			"\\sum\\limits_{ $1}^{ $2} $0"
+		],
+		"description": ""
+	},
+
+
+	"Integral": {
+		"prefix": [
+			"\\int"
+		],
+		"body": [
+			"\\int\\limits_{ $1}^{ $2} $0"
+		],
+		"description": ""
+	},
+
+
+	"Limit": {
+		"prefix": [
+			"\\lim"
+		],
+		"body": [
+			"\\lim\\limits_{{$1:x} \\to {$2:\\infty}} $0"
+		],
+		"description": ""
+	},
+
+
+	"Max": {
+		"prefix": [
+			"\\max"
+		],
+		"body": [
+			"\\max\\limits_{ $1} $0"
+		],
+		"description": ""
+	},
+
+
+	"Min": {
+		"prefix": [
+			"\\min"
+		],
+		"body": [
+			"\\min\\limits_{ $1} $0"
+		],
+		"description": ""
+	},
+
+
+	"Big cup": {
+		"prefix": [
+			"\\bigu"
+		],
+		"body": [
+			"\\bigcup\\limits_{ $1}^{ $2} $0"
+		],
+		"description": ""
+	},
+
+
+	"Big cap": {
+		"prefix": [
+			"\\biga"
+		],
+		"body": [
+			"\\bigcap\\limits_{ $1}^{ $2} $0"
+		],
+		"description": ""
+	},
+
+	
+	"Backslash": {
+		"prefix": [
+			"\\bs"
+		],
+		"body": [
+			"\\backslash "
+		],
+		"description": ""
+	}
+}
