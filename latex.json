@@ -13,6 +13,29 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
+
+	"dm": {
+		"prefix": [
+			"dm"
+		],
+		"body": [
+			"\\[",
+			"$1",
+			"\\]]"
+
+		]
+	},
+
+
+	"mk": {
+		"prefix": [
+			"mk"
+		],
+		"body": [
+			"$$1$"
+		]
+	},
+
 	"Simple Template": {
 		"prefix": [
 			"template-basic"
